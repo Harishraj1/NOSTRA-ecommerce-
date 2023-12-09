@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    width: 100%;
+}
+.navbar{
+    color: #1D232C;
+    border-bottom: solid #1D232C 2px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sidenav{
+    background-color: #1D232C;
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 30%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    transition-duration: 1s;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+i{
+    cursor: pointer;
+}
+#menubar{
+    visibility: hidden;
+}
+.nav-list{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+.nav-list p{
+    font-size: 18px;
+    cursor: pointer;
+}
+@media screen and (max-width:700px){
+
+    .nav-list{
+        visibility: hidden;
+    }
+    #menubar{
+        visibility: visible;
+        padding-right: 10px;
+    }
+}
+/* container-image */
+
+.main-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    overflow-x: scroll;
+}
+.slider-container::-webkit-scrollbar{
+    width: 0;
+    appearance: none;
+}
+.container_img-1, .container_img-2, .container_img-3{
+    width: 60%;
+    height: 70vh;
+}
+.left_btn{
+    font-size: 72px;
+    background-color: rgb(211, 204, 194);
+    border-radius: 20px;
+    padding: 10px 5px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+.right_btn{
+    font-size: 72px;
+    background-color: rgb(211, 204, 194);
+    border-radius: 20px;
+    padding: 10px 5px;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+.text-container{
+    position: absolute;
+    text-align: center;
+}
+.text-container h1{
+    font-size: 72px;
+    color: #e4dbdb;
+    font-weight: bold;
+    font-weight: 700;
+}
+.text-container h3{
+    color: #e4dbdb;
+    font-size: 22px;
+    margin-top: 2%;
+    font-weight: 600;
+}
+.text-container p{
+    padding: 10px 20px;
+    background-color: #e4dbdb;
+    display: inline-block;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+/* brand */
+.brands-container{
+    width: 100%;
+    margin-top: 3%;
+}
+.brands-container h1{
+    padding: 20px 0px;
+}
+.brands-container-img{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.brands-container-img img{
+    width: 6%;
+    cursor: pointer;
+}
+ /* text container */
+ .txt-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+ }
+ /* cards */
+.cards{
+    display: flex;
+    gap: 2%;
+    margin-top: 3%;
+}
+.card{
+    border-radius: 5px;
+    padding: 10px;
+}
+.card i{
+    font-size: 36px;
+    padding: 10px;
+}
+/* new arrivel */
+/* want to make the width full view width */
+.newArrivel-container{
+    margin-top: 3%;
+    width: 100%;
+}
+.newArrivel-container h1{
+    padding-bottom: 1%;
+}
+.newcards{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.newcards-card{
+    position: relative;
+}
+.newcards-card img{
+    width: 100%;
+}
+.newcards-card_outer{
+    background-color: rgba(0, 0, 0, 0.612);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+}
+.newcards-card_txt{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background-color: #e4dbdb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* most wanted container */
+.most-wanted_container{
+    width: 100%;
+    margin-top: 3%;
+}
+.most-wanted_container h1{
+    padding-bottom: 2%;
+}
+.most-wanted_cards{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.most-wanted_cards::-webkit-scrollbar{
+    width: 0;
+    appearance: none;
+}
+.most-wanted_card{
+    position: relative;
+}
+.most-wanted_card p{
+    position: absolute;
+    top: 0;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.most-wanted_card i{
+    position: absolute;
+    font-size: 28px;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+/* limited offer */
+.limited_offer-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #181C26;
+}
+.limited_offer-container_left{
+    width: 32%;
+}
+.limited_offer-container_left img{
+    object-fit: cover;
+    padding: 20px 0px;
+}
+.limited_offer-container_right{
+    color: #e4dbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.limited_offer-container_right h1{
+    font-size: 48px;
+}
+.limited_offer-container_right h3{
+    font-size: 32px;
+}
+.limited_offer-container_right p{
+    font-size: 18px;
+    margin-top: 2%;
+    background-color: #e4dbdb;
+    color: #181C26;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 16%;    /* want to use fit-content */
+    cursor: pointer;
+}
+
+/* news letter */
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+    text-align: center;
+    gap: 10px;
+}
+.news-letter h1{
+    font-size: 48px;
+}
+.news-letter p{
+    font-size: 22px;
+}
+.news-letter input{
+    font-size: 18px;
+    padding: 5px 5px;
+    border: 2px solid #181C26;
+}
+.news-letter button{
+    font-size: 22px;
+    background-color: #181C26;
+    color: #e4dbdb;
+    width: 13%;
+    padding: 8px 0px;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2% 0px;
+    background-color: #181C26;
+    color: #e4dbdb;
+}
+footer h1{
+    font-weight: 900;
+}
+footer p{
+    font-size: 22px;
+}
+.footer-icons{
+    display: flex;
+    gap: 5%;
+    padding: 20px 30px;
+}
+.footer-icons i{
+    font-size: 26px;
+}
+
+
